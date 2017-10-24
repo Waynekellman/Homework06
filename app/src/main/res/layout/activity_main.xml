@@ -18,13 +18,6 @@
             android:textSize="32sp"
             android:gravity="bottom|right"
             android:freezesText="true"/>
-        <Button
-            android:id="@+id/ans"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="buttonPress"
-            android:text="Ans"
-            android:layout_weight="3"/>
     </LinearLayout>
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -195,16 +188,22 @@
         android:id="@+id/linear_layout05"
         android:orientation="horizontal"
         android:layout_below="@+id/linear_layout04">
-
         <Button
-            android:id="@+id/button_sqrt"
+            android:id="@+id/ans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="buttonPress"
+            android:text="Ans"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/button_equal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:onClick="buttonPress"
-            android:text="sqrt" />
+            android:text="="/>
         <Button
-            android:id="@+id/button_exp"
+            android:id="@+id/button_power"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -217,13 +216,6 @@
             android:layout_weight="1"
             android:onClick="buttonPress"
             android:text="clear"/>
-        <Button
-            android:id="@+id/button_equal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="buttonPress"
-            android:text="="/>
 
     </LinearLayout>
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -315,14 +307,13 @@
         android:id="@+id/linear_layout08"
         android:orientation="horizontal"
         android:layout_below="@+id/linear_layout07">
-
         <Button
-            android:id="@+id/button_Rad"
+            android:id="@+id/button_sqrt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:onClick="buttonPress"
-            android:text="Rad" />
+            android:text="sqrt" />
         <Button
             android:id="@+id/button_factorial"
             android:layout_width="match_parent"
@@ -345,6 +336,31 @@
             android:onClick="buttonPress"
             android:text="."/>
 
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="nyc.c4q.homework06.MainActivity"
+        android:id="@+id/linear_layout09"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linear_layout08">
+
+        <Button
+            android:id="@+id/button_Rad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="buttonPress"
+            android:text="Rad" />
+        <Button
+            android:id="@+id/exp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="buttonPress"
+            android:text="EXP"
+            android:layout_weight="1"/>
     </LinearLayout>
 
 </RelativeLayout>
