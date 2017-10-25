@@ -44,5 +44,7 @@ public class MainActivity extends AppCompatActivity {
             textView01.setText(textView01.getText().toString() + "(");
         else if (v== findViewById(R.id.button_par2))
             textView01.setText(textView01.getText().toString() + ")");
+
+
     }
 }
